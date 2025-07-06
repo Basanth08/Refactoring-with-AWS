@@ -137,8 +137,15 @@ This repository demonstrates best practices for refactoring and modernizing appl
 
 Here's a step-by-step guide to how the AWS environment is set up and deployed for this project:
 
+**🔑 Key Pair Created:**
+- Name: `vprofile-bean-key`
+- Type: `rsa`
+- Created: 2025/07/06 12:17 GMT-4
+
+This key pair is used for secure login to your Beanstalk instances.
+
 1. **Login to your AWS account**
-2. **Create a key pair** for Beanstalk instance login
+2. **Create a key pair** for Beanstalk instance login (e.g., `vprofile-bean-key`)
 3. **Create security groups** for ElastiCache, RDS, and ActiveMQ
 4. **Provision core AWS services:**
     - RDS (Relational Database Service)
@@ -158,6 +165,19 @@ Here's a step-by-step guide to how the AWS environment is set up and deployed fo
 14. **Update DNS entries** (e.g., in GoDaddy DNS zones) to point to your AWS resources
 
 This flow ensures a secure, scalable, and production-ready deployment on AWS.
+
+### 🔒 Security Group: vprofile-backend-SG
+
+- **Security group name:** vprofile-backend-SG
+- **Description:** Security group for backend services
+- **VPC ID:** vpc-04b1261bc49c7c0f8
+- **Inbound rules:**
+  - SSH (TCP, port 22) from allowed sources
+  - All traffic (all protocols, all ports) from allowed sources
+- **Outbound rules:**
+  - Default (allow all)
+
+This security group is essential for controlling access to backend resources such as EC2 instances, RDS, ElastiCache, and ActiveMQ. It ensures only authorized traffic can reach your backend services, improving the security posture of your AWS environment.
 
 ---
 
