@@ -345,7 +345,6 @@ Your application is now live and accessible via your custom GoDaddy domain with 
 - **Live URL:** [https://vprofile.basanthhvaraganti.xyz/login](https://vprofile.basanthhvaraganti.xyz/login)
 - The secure connection and custom domain confirm that your DNS, SSL, and AWS deployment are all correctly configured.
 
-🎉 **Congratulations! Your cloud-native application is fully deployed and production-ready on your own domain.**
 
 ### 🌍 AWS CloudFront Integration
 
@@ -356,7 +355,6 @@ To further enhance performance, security, and global reach, AWS CloudFront was c
 - **Reduced latency** and offloading of traffic from your origin servers
 
 By integrating CloudFront, your application delivers a seamless and secure experience to users everywhere.
-
 ---
 
 ## ▶️ Usage
