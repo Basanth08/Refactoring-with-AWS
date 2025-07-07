@@ -329,7 +329,7 @@ This step ensures your application can connect to all required AWS services and 
 
 Your application has been successfully deployed to AWS Elastic Beanstalk! Below is a screenshot of the live login page, confirming that all backend services and configurations are working as expected:
 
-![Deployed Application Login Page](Application.png)
+![Deployed Application Login Page](./Diagrams/Application.png)
 
 - **URL:** http://vprofileapppp.us-east-1.elasticbeanstalk.com/login
 - The login page is accessible, indicating that the application is running and connected to all required AWS resources.
